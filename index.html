@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessica & Bruno | 08.08.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#hero" class="navbar__brand">J &amp; B</a>
+    <nav class="navbar__links" id="navLinks">
+      <a href="#hero">Início</a>
+      <a href="#historia">Nossa História</a>
+      <a href="#cerimonia">Cerimônia</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#presentes">Presentes</a>
+    </nav>
+    <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <img src="assets/floral-corner.svg" class="hero__floral hero__floral--tl" alt="" aria-hidden="true">
+    <img src="assets/floral-corner.svg" class="hero__floral hero__floral--br" alt="" aria-hidden="true">
+
+    <div class="hero__content reveal">
+      <div class="monogram">
+        <img src="assets/floral-wreath.svg" class="monogram__wreath" alt="" aria-hidden="true">
+        <span class="monogram__text">J &amp; B </span>
+      </div>
+      <h1 class="hero__names">Jessica &amp; Bruno</h1>
+      <p class="hero__date">08 de Agosto de 2026</p>
+
+      <div class="countdown" id="countdown" aria-label="Contagem regressiva para o casamento">
+        <div class="countdown__unit"><span id="cd-days">00</span><small>dias</small></div>
+        <div class="countdown__unit"><span id="cd-hours">00</span><small>horas</small></div>
+        <div class="countdown__unit"><span id="cd-min">00</span><small>min</small></div>
+        <div class="countdown__unit"><span id="cd-sec">00</span><small>seg</small></div>
+      </div>
+
+      <a href="#historia" class="scroll-cue" aria-label="Rolar para próxima seção">&#8595;</a>
+    </div>
+  </section>
+
+  <!-- NOSSA HISTÓRIA -->
+  <section id="historia" class="section section--alt">
+    <div class="container reveal">
+      <span class="eyebrow">Nossa História</span>
+      <h2 class="section__title">Um amor escrito para durar</h2>
+      <img src="assets/leaf-divider.svg" class="divider" alt="" aria-hidden="true">
+      <div class="story">
+        <div class="story__photo">
+          <div class="photo-frame">
+            <span><img src="assets/JesicaEBruno.jpeg" alt="Foto de Jessica e Bruno juntos, sorrindo e abraçados"></span>
+          </div>
+        </div>
+        <p class="story__text">
+          O que começou com conversas simples, mensagens trocadas ao longo do dia e risadas compartilhadas, foi muito além de uma amizade. 
+          Sem perceber, o carinho virou amor, e o amor virou certeza. Hoje, cercados pelas pessoas que mais amamos, celebramos o início da nossa maior aventura: construir, juntos, uma família.
+          Esta é a nossa história — e ela é para sempre.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERIMÔNIA & FESTA -->
+  <section id="cerimonia" class="section">
+    <div class="container reveal">
+      <span class="eyebrow">Cerimônia &amp; Festa</span>
+      <h2 class="section__title">Celebre este momento conosco</h2>
+      <img src="assets/leaf-divider.svg" class="divider" alt="" aria-hidden="true">
+
+      <div class="venues">
+        <div class="venue-card">
+          <div class="venue-card__icon">&#10013;</div>
+          <h3>Cerimônia</h3>
+          <p class="venue-card__name">Oficial de Registro Civil das Pessoas Naturais do 2 Subdistrito da Sede</p>
+          <p>Praça Rui Barbosa, 158 - Santa Terezinha, Santo André - SP</p>
+          <p>08/08/2026 às 09h40</p>
+          <a class="btn btn--outline" href="https://maps.google.com/?q=Oficial+de+Registro+Civil+das+Pessoas+Naturais+do+2+Subdistrito+da+Sede" target="_blank" rel="noopener">Ver no mapa</a>
+        </div>
+        <div class="venue-card">
+          <div class="venue-card__icon">&#127881;</div>
+          <h3>Festa / Recepção</h3>
+          <p class="venue-card__name"></p>
+          <p>Residencial Forte da Ribeira Condomínio A n° 200 - Parque São Lourenço - São Paulo, SP</p>
+          <p>08/08/2026 às 12h00</p>
+          <a class="btn btn--outline" href="https://maps.app.goo.gl/7jt1pBZqjWaxMytm8" target="_blank" rel="noopener">Ver no mapa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="section section--alt">
+    <div class="container reveal">
+      <span class="eyebrow">RSVP</span>
+      <h2 class="section__title">Confirme sua Presença</h2>
+      <img src="assets/leaf-divider.svg" class="divider" alt="" aria-hidden="true">
+
+      <form class="rsvp-form" id="rsvpForm">
+        <label>
+          Nome completo
+          <input type="text" name="nome" required placeholder="Seu nome completo">
+        </label>
+        <label>
+          Número de acompanhantes
+          <input type="number" name="acompanhantes" min="0" value="0">
+        </label>
+        <label>
+          Presença
+          <select name="presenca" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim, estarei presente</option>
+            <option value="nao">Não poderei comparecer</option>
+          </select>
+        </label>
+        <label>
+          Restrições alimentares (opcional)
+          <textarea name="restricoes" rows="3" placeholder="Alergias, vegetariano, etc."></textarea>
+        </label>
+        <button type="submit" class="btn btn--solid">Enviar Confirmação</button>
+        <p class="rsvp-form__feedback" id="rsvpFeedback" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- LISTA DE PRESENTES -->
+  <section id="presentes" class="section">
+    <div class="container reveal">
+      <span class="eyebrow">Lista de Presentes</span>
+      <h2 class="section__title">Lista de Presentes</h2>
+      <img src="assets/leaf-divider.svg" class="divider" alt="" aria-hidden="true">
+      <p class="gifts__intro">Sua presença é o nosso maior presente! Mas se desejar nos presentear, seguem algumas sugestões:</p>
+      <div class="gifts">
+        <a href="https://casamento-b7ho.listaideal.com.br/pt" class="btn btn--outline">Lista de Presentes — Loja Casa &amp; Cia</a>
+        <span class="btn btn--outline">Lua de Mel — Contribuição pelo Pix abaixo</span>
+        <button type="button" class="btn btn--outline" id="pixOpenBtn">Pix: jessica.bruno.08082026@gmail.com</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="section section--alt">
+    <div class="container reveal">
+      <span class="eyebrow">Galeria</span>
+      <h2 class="section__title">Nossos Momentos</h2>
+      <img src="assets/leaf-divider.svg" class="divider" alt="" aria-hidden="true">
+      <div class="gallery">
+        <div class="gallery__item"><span><img src="assets/JesicaEBruno.jpeg" alt="Foto de Jessica e Bruno juntos, sorrindo e abraçados"></span></div>
+        <div class="gallery__item"><span><img src="assets/WhatsApp Image 2026-07-04 at 20.30.50 (1).jpeg" alt="Foto de Jessica e Bruno juntos, sorrindo e abraçados"></span></div>
+        <div class="gallery__item"><span><img src="assets/WhatsApp Image 2026-07-04 at 20.30.50 (2).jpeg" alt="Foto de Jessica e Bruno juntos, sorrindo e abraçados"></span></div>
+        <div class="gallery__item"><span><img src="assets/WhatsApp Image 2026-07-04 at 20.30.50.jpeg" alt="Foto de Jessica e Bruno juntos, sorrindo e abraçados"></span></div>
+        <div class="gallery__item"><span><img src="assets/WhatsApp Image 2026-07-04 at 20.44.57 (1).jpeg" alt="Foto de Jessica e Bruno juntos, sorrindo e abraçados"></span></div>
+        <div class="gallery__item"><span><img src="assets/WhatsApp Image 2026-07-04 at 20.44.57.jpeg" alt="Foto de Jessica e Bruno juntos, sorrindo e abraçados"></span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer__verse">"O amor tudo sofre, tudo crê, tudo espera, tudo suporta." — 1 Coríntios 13:7</p>
+  <p class="footer__names">Jessica &amp; Bruno</p>
+  <p class="footer__contact">Contato: (11) 91295-9858</p>
+  <p class="footer__copy">&copy; 2024 Jessica &amp; Bruno. Feito com amor.</p>
+</footer>
+
+<div class="modal" id="pixModal" aria-hidden="true">
+  <div class="modal__backdrop" data-pix-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="pixModalTitle">
+    <button type="button" class="modal__close" data-pix-close aria-label="Fechar">&times;</button>
+    <h3 id="pixModalTitle">Pix — Copia e Cola</h3>
+    <p>Copie o código abaixo e cole no app do seu banco para nos presentear.</p>
+    <textarea class="modal__code" id="pixCode" readonly rows="4"></textarea>
+    <button type="button" class="btn btn--solid" id="pixCopyBtn">Copiar código</button>
+    <p class="modal__feedback" id="pixCopyFeedback" role="status"></p>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
